@@ -18,6 +18,10 @@ body {
     align-items:center;
   }
 
+  .devices{
+    display: none;
+  }
+
   .card{
     width: 60%;
     text-align: center;
@@ -59,4 +63,12 @@ body {
   #escape-btn:hover {
     background-color: #ff6666;
   }
-  
+
+  @media only screen and (max-width:980px){
+    .container{
+      display: none;
+    }
+    .devices{
+      display: block;
+    }
+  }

@@ -40,20 +40,25 @@ export default function App() {
     document.querySelector("#escape-btn").style.position = "absolute";
   }
   return (
-    <div class="container">
-      {
-        status == false ?
-          <div class="card">
-            <h1>Salom! {day} kuni ko'rishsak nima deysan?</h1>
-            <button id='ok-btn' onClick={() => setStatus(true)}>Ha, albatta!</button>
-            <button id="escape-btn" onMouseOver={EscapeFnc}>Yo'q, ishlarim bor</button>
-          </div>
-          :
-          <>
-            <img src={chillGuy} alt="image" className='image' />
-            <h2>Rozi bo'lishingni bilardim. Unda {day} kuni ko'rishguncha!</h2>
-          </>
-      }
-    </div>
+    <>
+      <div class="container">
+        {
+          status == false ?
+            <div class="card">
+              <h1>Salom! {day} kuni ko'rishsak nima deysan?</h1>
+              <button id='ok-btn' onClick={() => setStatus(true)}>Ha, albatta!</button>
+              <button id="escape-btn" onMouseOver={EscapeFnc}>Yo'q, ishlarim bor</button>
+            </div>
+            :
+            <>
+              <img src={chillGuy} alt="image" className='image' />
+              <h2>Rozi bo'lishingni bilardim. Unda {day} kuni ko'rishguncha!</h2>
+            </>
+        }
+      </div>
+      <div className='devices'>
+        Open in your PC or laptop.
+      </div>
+    </>
   )
 }
