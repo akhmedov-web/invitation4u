@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     font-family: Arial, sans-serif;
   }
   
@@ -31,14 +31,22 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     margin: 10px;
+    background-color: #F63E3E;
+    border: none;
+    color:white;
   }
   #ok-btn{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color:#4BB543;
+    color:white;
+    border: none;
   }
 
   #ok-btn:hover {

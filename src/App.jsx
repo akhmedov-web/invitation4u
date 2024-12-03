@@ -10,17 +10,17 @@ export default function App() {
 
     // Map paths to days
     const dayMap = {
-      '/sunday': 'Sunday',
-      '/monday': 'Monday',
-      '/tuesday': 'Tuesday',
-      '/wednesday': 'Wednesday',
-      '/thursday': 'Thursday',
-      '/friday': 'Friday',
-      '/saturday': 'Saturday',
+      '/yakshanba': 'Yakshanba',
+      '/dushanba': 'Dushanba',
+      '/seshanba': 'Seshanba',
+      '/chorshanba': 'Chorshanba',
+      '/payshanba': 'Payshanba',
+      '/juma': 'Juma',
+      '/shanba': 'Shanba',
     };
 
     // Set the day based on the path or default to Sunday
-    setDay(dayMap[root] || 'Sunday');
+    setDay(dayMap[root] || 'Yakshanba');
   }, []); // Runs once on component mount
 
   function EscapeFnc() {
@@ -44,14 +44,14 @@ export default function App() {
       {
         status == false ?
           <div class="card">
-            <h1>Hey! Will we meet on {day}? <br /> Are you in?</h1>
-            <button id='ok-btn' onClick={() => setStatus(true)}>Yes, absolutely!</button>
-            <button id="escape-btn" onMouseOver={EscapeFnc}>No, I have other things to do :(</button>
+            <h1>Salom! {day} kuni ko'rishsak nima deysan?</h1>
+            <button id='ok-btn' onClick={() => setStatus(true)}>Ha, albatta!</button>
+            <button id="escape-btn" onMouseOver={EscapeFnc}>Yo'q, ishlarim bor</button>
           </div>
           :
           <>
             <img src={chillGuy} alt="image" className='image' />
-            <h2>I knew you'd say yes. See you then!</h2>
+            <h2>Rozi bo'lishingni bilardim. Unda {day} kuni ko'rishguncha!</h2>
           </>
       }
     </div>
